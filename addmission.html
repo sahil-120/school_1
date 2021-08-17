@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Addmission</title>
+  <link rel="stylesheet" href="./css/addmission.css">
+  <script src="//cdn.jsdelivr.net/npm/less@4.1.1"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav>
+    <div class="logo">SAHIL</div>
+    <label for="btn" class="icon">
+      <span class="fa fa-bars"></span>
+    </label>
+    <input class="input-nav" type="checkbox" id="btn">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <label for="btn-1" class="show">Facuties</label>
+        <a href="#">Faculties</a>
+        <input class="input-nav" type="checkbox" id="btn-1">
+        <ul>
+          <li><a href="#">Eng Medium</a></li>
+          <li><a href="#">Nep Medium</a></li>
+          <li><a href="#">Gen Medium</a></li>
+        </ul>
+      </li>
+      <li>
+        <label for="btn-2" class="show"></label>
+        <a href="#">Faculties</a>
+        <input class="input-nav" type="checkbox" id="btn-2">
+        <ul>
+          <li><a href="#">Eng Medium</a></li>
+          <li><a href="#">Nepali Medium</a></li>
+          <li><a href="#">Technical</a></li>
+          <li>
+            <label for="btn-3" class="show">Collages</label>
+            <a href="#">More <span class="fa fa-plus"></span></a>
+            <input class="input-nav" type="checkbox" id="btn-3">
+            <ul>
+              <li><a href="#">Eduation</a></li>
+              <li><a href="#">Management</a></li>
+              <li><a href="#">Science</a></li>
+              <li><a href="#">Tech Sci</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">Online Addmission</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <form>
+      <h1 class="header-form">
+        Addmission Form
+      </h1>
+      <p class="header2-form">
+        *please Fill The Form Correct*
+
+      </p>
+      <form>
+        <label for="fname">Student F Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="First Name">
+        <label for="lname">last Name:</label>
+        <input type="text" id="lname" name="lname" placeholder="lastname"><br>
+        <label for="faname">Father's Name:</label>
+        <input type="text" id="faname" name="faname">
+        <label for="moname">Mother's Name:</label>
+        <input type="text" id="moname" name="moname"><br>
+        <label for="taddress">temp Address:</label>
+        <input type="text" id="taddress" name="taddress">
+        <label for="taddress">perm Address:</label>
+        <input type="text" id="taddress" name="paddress"><br>
+        <label for="dob">Date Of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <label for="number">Contact</label>
+        <input type="number" id="number" name="no"><br>
+        <select name="Facuties">
+          <option value="-1" selected>Faculties</option>
+          <option value="Techinical">Techinical</option>
+          <option value="General">General</option>
+          <option value="English">English</option>
+
+        </select>
+        Select your Gender
+        <input type="radio" name="Gender" value="male">Male
+        <input type="radio" name="Gender" value="Female">Female<br>
+        <label for="old-class">From With Class</label>
+        <input type="number" name="old-class" id="old"><br>
+        <label for="one-class">To Class</label>
+        <input type="number" name="new-class" id="old"><br>
+
+        <label for="old-certi">old Cerificate img</label>
+        <input type="file" name="old-certi"><br>
+        <a href="index.html"><input type="button" value="Submit" class=form-button></a>
+        
+
+      </form>
+      <i class="fas fa-school"></i>
+      <i class="fas fa-code"></i>
+  </div>
+
+
+
+
+
+  <script>
+    $('.icon').click(function () {
+      $('span').toggleClass("cancel");
+    });
+  </script>
+</body>
+
+</html>
